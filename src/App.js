@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import images from "./assets/images"; // array of image objects
+import "./App.css"; // default styling
+import Scrambler from "./components/Scrambler"; // sends images to DOM
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    images
+  }
+
+  render () {
+    return (
+      <div>
+          <p>Test.</p>
+          
+          {this.state.images.map(image => (
+            <Scrambler
+              className="clickMe"
+              id={image.id}
+              src={image.src}
+              alt={image.alt}
+            />          
+          ))}
+
+      </div>
+    );
+  }
+
 }
 
 export default App;

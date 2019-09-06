@@ -25,9 +25,7 @@ All contributions and suggestions are welcome! For direct contributions, please 
 - Email: petewanca@gmail.com
 - LinkedIn: https://www.linkedin.com/in/petewanca/
 
-.
-.
-.
+...
 
 # Available Scripts
 In the project directory, you can run:
