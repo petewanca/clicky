@@ -26,7 +26,7 @@ Email: petewanca@gmail.com
 LinkedIn: https://www.linkedin.com/in/petewanca/
 
 
-## Available Scripts
+# Available Scripts
 In the project directory, you can run:
 
 ### `npm start`
