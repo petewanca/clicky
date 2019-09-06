@@ -20,11 +20,14 @@ This project is licensed under The MIT License (MIT).
 All contributions and suggestions are welcome! For direct contributions, please fork the repository and file a pull request.
 
 ## Contact
-Name: Pete Wanca (@petewanca)
-Role: Apprentice Full Stack Developer | Full-time Data Engineer
-Email: petewanca@gmail.com
-LinkedIn: https://www.linkedin.com/in/petewanca/
+- Name: Pete Wanca (@petewanca)
+- Role: Apprentice Full Stack Developer | Full-time Data Engineer
+- Email: petewanca@gmail.com
+- LinkedIn: https://www.linkedin.com/in/petewanca/
 
+.
+.
+.
 
 # Available Scripts
 In the project directory, you can run:
