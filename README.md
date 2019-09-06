@@ -7,8 +7,8 @@ https://petewanca.github.io/clicky
 @petewanca
 
 ## Technology
-React
-JavaScript
+- React
+- JavaScript
 
 ## About
 TBD
