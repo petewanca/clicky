@@ -1,0 +1,47 @@
+[
+    { 
+        "id": 1, 
+        "name": "Deku",
+        "image": "https://ih0.redbubble.net/image.589456562.2661/flat,550x550,075,f.jpg"
+    },
+    {
+        "id": 2, 
+        "name": "All Might",
+        "image": "https://imgix.ranker.com/user_node_img/50081/1001610579/original/started-down-this-path-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
+    },
+    {
+        "id": 3,
+        "name": "Ed Elric",
+        "image": "https://imgix.ranker.com/user_node_img/50081/1001611054/original/even-your-greatest-mistakes-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
+    },
+    {
+        "id": 4,
+        "name": "Spike",
+        "image": "https://imgix.ranker.com/user_node_img/50088/1001742646/original/the-end-of-a-cat-and-_39_s-life-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
+    },
+    {
+        "id": 5,
+        "name": "Hisoka",
+        "image": "https://pbs.twimg.com/profile_images/825774857359126528/FY0AER5c_400x400.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Genos",
+        "image": "https://vignette.wikia.nocookie.net/onepunchman/images/6/69/Genos_profile_anime.png/revision/latest?cb=20161002155041"
+    },
+    {
+        "id": 7,
+        "name": "Saitama",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/711YqJG3p2L._SX425_.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Gon",
+        "image": "https://vignette.wikia.nocookie.net/hunterx/images/0/06/GonMugshot.png/revision/latest?cb=20160704025705"
+    },
+    {
+        "id": 9,
+        "name": "Killua",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/killua-zoldyck-hunter-x-hunter-2011-8.51.jpg"
+    }
+]
