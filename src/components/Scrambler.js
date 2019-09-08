@@ -1,19 +1,49 @@
-import React from "react";
+import React, { Component } from 'react';
 
-function Scrambler(props) {
-    
-    console.log(props);
+class Scrambler extends Component {
 
+  state = {
+    counter: 0
+  };
+
+  handleClick = event => {
+    event.preventDefault();
+
+    let counter = this.state.counter;
+    counter++
+    console.log(counter);
+  };
+
+  render () {
+    const props = this.props
+
+    const styles = {
+        imageStyle: {
+            height: '200px',
+            width: '200px'
+        }
+    };
+      
     return (
-        <div>
-            <img
-                className="clickMe"
-                id={props.id}
-                src={props.src}
-                alt={props.alt}
-            />            
-        </div>
+
+      <div>
+        <a 
+        href='/' 
+        onClick={this.handleClick}
+        >
+          <img style={styles.imageStyle}
+              className='clicky'
+              key={props.id}
+              id={props.id}
+              src={props.src}
+              alt={props.alt}
+          /> 
+        </a>
+      </div>
+
     )
+  }
+    
 }
 
 export default Scrambler;
