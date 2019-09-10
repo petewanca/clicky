@@ -47,24 +47,24 @@ class App extends Component {
         currentScore: this.state.currentScore+1
       })
 
-      this.shuffleCards(images)
+      // this.shuffleCards(images)
 
     // check current score for win event
     } else if (this.state.currentScore === 9) {
-      
-      alert('You win');
-      
+      alert('You win, play again.');
       this.setState({
-        currentScore: 0,
-        topScore: 9,
-        chosenCards: []
+          currentScore: 0,
+          topScore: 9,
+          chosenCards: []
       })
 
-    // if the chosenCards state contains user selection, game over
+      // this.shuffleCards(images)
+
+    // game over scenario, if the chosenCards state contains user selection
     // reset state back to 0 across the board
     } else if (chosenCards.includes(userSelection.alt)) {
-      alert('You lose and your scores have been reset')
-      
+      alert('You lose, please try again.')
+
       // check/set state top score
       if (this.state.currentScore > this.state.topScore) {
         this.setState({
@@ -86,7 +86,7 @@ class App extends Component {
 
     const style = {
       backgroundStyle: {
-        backgroundImage: 'url(https://3.bp.blogspot.com/-79OHpD4iyM4/XH8jStqcJDI/AAAAAAAAIPM/_9uqTBc5R_AHsyIYWqvxA1OrZi9njwOGwCHMYCw/s1600/nicolas-cage-you-dont-say-%25E2%259D%25A4-4k-hd-desktop-wallpaper-for.jpg)',
+        backgroundImage: 'url(https://hdwallsource.com/img/2015/7/grey-grunge-wallpaper-46683-48106-hd-wallpapers.jpg)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
       }
@@ -117,6 +117,7 @@ class App extends Component {
                   </a>
                 ))
               }
+
           </div>
         </div>
       </div>

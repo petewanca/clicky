@@ -7,8 +7,8 @@ class Card extends Component {
 
     const styles = {
         imageStyle: {
-            height: '200px',
-            width: '200px'
+            height: 190,
+            width: 190
         }
     };
       
@@ -16,7 +16,7 @@ class Card extends Component {
 
       <div className='text-center'>
         <img style={styles.imageStyle}
-            className='clicky m-3 border border-dark rounded text-center'
+            className='clicky m-3 border border-dark rounded text-center bg-light'
             key={props.id}
             src={props.src}
             alt={props.alt}
