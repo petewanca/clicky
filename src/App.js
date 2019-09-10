@@ -16,45 +16,15 @@ class App extends Component {
   // credit @ https://javascript.info/task/shuffle
   shuffleCards = (images) => {
       for (let i = images.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
+        let j = Math.floor(Math.random() * (i + 1)); 
         [images[i], images[j]] = [images[j], images[i]];
       }
   }
 
-  handleImageClick = event => {
-    event.preventDefault();
-    console.log(event.target);
-    
-    let userSelection = event.target;
-    let chosenCards = this.state.chosenCards
-    
-    // if chosenCards state does not contain user selection, continue
-    if (!chosenCards.includes(userSelection.alt)) {
-        
-      chosenCards.push(userSelection.alt); 
-      userSelection.setAttribute('id', 'clicked')
-      console.log(chosenCards);
+  gameSimulator (choice, array) {
 
-      this.setState({
-        currentScore: this.state.currentScore+1
-      })
-
-      // this.shuffleCards(images)
-
-    // check current score for win event
-    } else if (this.state.currentScore === 9) {
-      alert('You win, play again.');
-      this.setState({
-          currentScore: 0,
-          topScore: 9,
-          chosenCards: []
-      })
-
-      // this.shuffleCards(images)
-
-    // game over scenario, if the chosenCards state contains user selection
-    // reset state back to 0 across the board
-    } else if (chosenCards.includes(userSelection.alt)) {
+    // lose scenario
+    if (array.includes(choice)) {
       alert('You lose, please try again.')
 
       // check/set state top score
@@ -63,14 +33,50 @@ class App extends Component {
           topScore: this.state.currentScore
         })
       }
+      // reset state
       this.setState({
         currentScore: 0,
-        // topScore: 0,
         chosenCards: []
       })
-
+      // reset cards
       this.shuffleCards(images)
-    } 
+
+    // game continuation
+    } else {
+
+      // iterate score
+      let score = this.state.currentScore + 1
+      this.setState({
+        currentScore: score
+      })
+      // add card to array
+      array.push(choice);
+      console.log(`User Choice: ${choice}`);
+      console.log(`Chosen Cards: ${array}`);
+      // shuffle all cards
+      this.shuffleCards(images)
+      
+      // check score within game continuation
+      if (score === 9) {
+        alert("You win! Try to do it again.")
+        // reset state
+        this.setState({
+          currentScore: 0,
+          topScore: 9,
+          chosenCards: []
+        })
+        // shuffle all cards
+        this.shuffleCards(images)
+      }
+    }
+  }
+
+  handleImageClick = event => {
+    event.preventDefault();
+    
+    let userSelection = event.target.alt;
+    let chosenCards = this.state.chosenCards
+    this.gameSimulator(userSelection,chosenCards);
   };
 
 
