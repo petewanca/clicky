@@ -83,13 +83,22 @@ class App extends Component {
 
 
   render () {
+
+    const style = {
+      backgroundStyle: {
+        backgroundImage: 'url(https://3.bp.blogspot.com/-79OHpD4iyM4/XH8jStqcJDI/AAAAAAAAIPM/_9uqTBc5R_AHsyIYWqvxA1OrZi9njwOGwCHMYCw/s1600/nicolas-cage-you-dont-say-%25E2%259D%25A4-4k-hd-desktop-wallpaper-for.jpg)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+      }
+    };
+
     return (
-    <div>
+    <div style={style.backgroundStyle}>
       <Nav 
         currentScore={this.state.currentScore}
         topScore={this.state.topScore}
       />
-        <div className='container' key='mainContainer'>
+        <div className='container' key='mainContainer' >
           <div className='row' key='imageRow'>
               {
                 this.state.images.map(image => (

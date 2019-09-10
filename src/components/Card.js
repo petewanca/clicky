@@ -14,14 +14,14 @@ class Card extends Component {
       
     return (
 
-      // <div className='text-center'>
+      <div className='text-center'>
         <img style={styles.imageStyle}
             className='clicky m-3 border border-dark rounded text-center'
             key={props.id}
             src={props.src}
             alt={props.alt}
         /> 
-      // </div>
+      </div>
 
     )
   }
