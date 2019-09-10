@@ -15,18 +15,10 @@ class App extends Component {
  
   // credit @ https://javascript.info/task/shuffle
   shuffleCards = (images) => {
-    // shuffle(images) {
       for (let i = images.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-    
-        // swap elements images[i] and images[j]
-        // we use "destructuring assignment" syntax to achieve that
-        // you'll find more details about that syntax in later chapters
-        // same can be written as:
-        // let t = images[i]; images[i] = images[j]; images[j] = t
+        let j = Math.floor(Math.random() * (i + 1));
         [images[i], images[j]] = [images[j], images[i]];
       }
-    // }
   }
 
   handleImageClick = event => {
