@@ -13,6 +13,8 @@ https://petewanca.github.io/clicky/
 ## About
 An anime-themed memory game. Choose cards, but only click them once. If you click a card more than one time, you lose. Try to select all cards!
 
+<img src="./public/click-ss.png" alt="Home Page">  
+
 ## License
 This project is licensed under The MIT License (MIT).
 
