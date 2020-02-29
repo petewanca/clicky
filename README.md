@@ -23,6 +23,6 @@ All contributions and suggestions are welcome! For direct contributions, please 
 
 ## Contact
 - Name: Pete Wanca (@petewanca)
-- Role: Apprentice Full Stack Developer & Full-time Data Engineer
+- Role: Full Stack Developer
 - Email: petewanca@gmail.com
 - LinkedIn: https://www.linkedin.com/in/petewanca/
